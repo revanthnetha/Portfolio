@@ -1,10 +1,11 @@
 import React from 'react'
 import './header.css'
-import { Box, Center,Heading,Text,Stack } from '@chakra-ui/react'
+import { Box, Center,Heading,Text,Stack,Button } from '@chakra-ui/react'
 import {
 	FaInstagram,
 	FaLinkedin,
-	FaGithub
+	FaGithub,
+    FaYoutube
 } from "react-icons/fa";
 const Header = () => {
   return (
@@ -46,20 +47,39 @@ const Header = () => {
         <div className='port__header-content__input'>
           <input type={"email"} placeholder="Your email"/>
           <button type='button'>Get Started</button>
+         
         </div>
+       
         <Stack direction={"row"} spacing={6}>
-							<SocialButton label={"Linkedin"} href={"#"}>
+							<Box label={"Linkedin"} href={"#"} 
+                            _hover={{
+                                cursor : 'pointer'
+                            }}
+
+                            >
 								<FaLinkedin />
-							</SocialButton>
-							<SocialButton label={"YouTube"} href={"https://www.youtube.com/"}>
+							</Box>
+							<Box label={"YouTube"} href={"https://www.youtube.com/"}
+                             _hover={{
+                                cursor : 'pointer'
+                            }}
+                            >
 								<FaYoutube />
-							</SocialButton>
-							<SocialButton label={"Instagram"} href={"#"}>
+							</Box>
+							<Box label={"Instagram"} href={"#"}
+                             _hover={{
+                                cursor : 'pointer'
+                            }}
+                            >
 								<FaInstagram />
-							</SocialButton>
-							<SocialButton label={"Github"} href={"#"}>
+							</Box>
+							<Box label={"Github"} href={"#"}
+                             _hover={{
+                                cursor : 'pointer'
+                            }}
+                            >
 								<FaGithub />
-							</SocialButton>
+							</Box>
 						</Stack>
         </Box>
         
