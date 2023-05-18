@@ -27,7 +27,7 @@ const Header = () => {
          fontWeight={{ base: " 650", md: " 650", lg: "750" }}
          lineHeight={{ base: "40px", md: "100px" }}
          letterSpacing="-0.32px"
-        className="gradient__text" >Bandi Revanth </Heading>
+        className="gradient__text" >Hi I'm Bandi Revanth </Heading>
         
         
         <Text 
