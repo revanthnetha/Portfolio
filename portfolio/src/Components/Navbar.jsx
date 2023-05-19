@@ -21,7 +21,9 @@ const Navbar = () => {
       </div>
       <div className="port__navbar-sign">
         
-        <button type="button">Contact Me</button>
+        <button type="button"  _hover={{
+          cursor: "pointer",
+        }}>Contact Me</button>
       </div>
       <div className="port__navbar-menu">
         {toggleMenu

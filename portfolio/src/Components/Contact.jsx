@@ -9,10 +9,11 @@ import {
 } from "react-icons/fa";
 import { Box, Center, Link, Text,Stack } from "@chakra-ui/react";
 import { FiSend } from "react-icons/fi";
+import "./Contact.css"
 
 const Contact = () => {
   return (
-    <Box px={{base : "100px",md : "180px"}} color={"white"}>
+    <Box id="contact" px={{base : "100px",md : "180px"}} color={"white"}>
       <Center
         fontSize={{ base: "25px", sm: "30px", md: "42px", lg: "54px" }}
         fontWeight={{ base: " 650", md: " 650", lg: "750" }}
@@ -20,13 +21,14 @@ const Contact = () => {
         letterSpacing="-0.32px"
         mb={"40px"}
       >
-        <Box >Get In</Box>{" "}
+        <Box mr={"12px"}>Get In</Box>{" "}
         <Text className="gradient__text">Touch!</Text>
       </Center>
 
-      <Box>
+      <Box display={"flex"} flexDirection={{base : "column",md : "row"}}>
         <Box
-        maxWidth={{base :"300px",md : "600px"}}
+        maxWidth={{base :"300px",md : "550px"}}
+        mr={"20px"}
         >
         <Text
          fontSize={{ base: "22px", sm: "28px", md: "36px", lg: "40px" }}
@@ -94,7 +96,42 @@ const Contact = () => {
 							</Box>
 						</Stack>
         </Box>
+        <Box>
+          <form className="contact_form">
+             <div className="form_input_group">
+              <div className="form_input_div">
+                <input type="text" 
+                placeholder="Your Name"
+                className="form__control"
+                />
+              </div>
+              <div className="form_input_div">
+                <input type="email" 
+                placeholder="Your Email"
+                className="form__control"
+                />
+              </div>
+              <div className="form_input_div">
+                <input type="text" 
+                placeholder="Your Subject"
+                className="form__control"
+                />
+              </div>
+             </div>
+             <div className="form_input_div">
+               <textarea placeholder="Your Message" className="form_control textarea"></textarea>
+              </div>
+
+              <button className="button">
+                Send Message
+                <span className="button_icon contact_button_icon">
+                  <FiSend/>
+                </span>
+              </button>
+          </form>
+        </Box>
       </Box>
+
     </Box>
   );
 };
