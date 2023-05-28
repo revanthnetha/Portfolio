@@ -4,6 +4,7 @@ import Navbar from './../Components/Navbar'
 import Header from './../Components/Header'
 import Contact from '../Components/Contact'
 import About from '../Components/About'
+import Tech from '../Components/Tech'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Navbar/>
         <Header/>
         <About/>
+        <Tech/>
         <Contact/>
 
       </div>

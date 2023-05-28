@@ -4,9 +4,9 @@ import Buttons from "./Buttons.jsx";
 import React from "react";
 
 const toggle = document.querySelector(".main_img");
-toggle.addEventListener("click", () => {
-  toggle.classList.toggle("active");
-});
+// toggle.addEventListener("click", () => {
+//   toggle.classList.toggle("active");
+// });
 function About() {
   return (
     <div id="aboutme" className="container home_container">
