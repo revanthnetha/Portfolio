@@ -3,13 +3,15 @@ import "./About.css";
 import Buttons from "./Buttons.jsx";
 import React from "react";
 
-// const toggle = document.querySelector(".main_img");
-// toggle.addEventListener("click", () => {
-//   toggle.classList.toggle("active");
-// });
+const toggle = document.querySelector(".main_img");
+toggle.addEventListener("click", () => {
+  toggle.classList.toggle("active");
+});
 function About() {
   return (
-    <div id="aboutme" className="container home_container">
+    
+    <div id="aboutme" className="container home_container" >
+      
       <div className="logo">
         <div className="main_img">
           <span className="circle"></span>
@@ -22,7 +24,7 @@ function About() {
           <span className="circle"></span>
         </div>
         <img
-          src="https://res.cloudinary.com/dvcksw7qc/image/upload/v1668760642/cld-sample-4.jpg"
+          src="https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947913/Portfolio/photo-1519681393784-d120267933ba_hdnayh.avif"
           alt=""
         />
       </div>
@@ -43,12 +45,16 @@ function About() {
           </Center>
         </Center>{" "}
         <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo
-          distinctio eveniet laudantium omnis architecto quia, dolore rem
-          provident nesciunt blanditiis ea amet eos. Hic doloribus fugiat
-          dolores unde incidunt.
-        </p>
+        <Center
+        fontSize={{ base: "12px", sm: "14px", md: "16px", lg: "18px" }}
+         lineHeight={{ base: "30px", md: "40px" }}
+         letterSpacing="-0.32px"
+         mb={{base : "20px",md : "20px"}}
+          alignSelf={"center"}
+          textAlign={"center"}
+         textColor="whiteAlpha.800"
+        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur distinctio officia corrupti facilis debitis odit! Accusantium incidunt repellendus, atque autem nisi vero sequi ipsam distinctio temporibus, totam, aperiam nihil dolor.</Center>
+        
       </h2>
 
       <Buttons />

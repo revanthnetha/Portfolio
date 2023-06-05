@@ -37,7 +37,7 @@ const Navbar = () => {
             <p><a href="#work">Work</a></p>
           </div>
           <div className="port__navbar-menu_container-links-sign">
-            <button type="button">Contact</button>
+            <Button type="button" >Contact</Button>
           </div>
         </div>
         )}

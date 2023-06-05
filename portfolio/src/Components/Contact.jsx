@@ -96,7 +96,7 @@ const Contact = () => {
 							</Box>
 						</Stack>
         </Box>
-        <Box>
+        <Box >
           <form className="contact_form">
              <div className="form_input_group">
               <div className="form_input_div">
