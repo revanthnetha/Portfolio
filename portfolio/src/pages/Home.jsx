@@ -6,6 +6,8 @@ import Header from './../Components/Header'
 import About from '../Components/About'
 import Tech from '../Components/Tech'
 import Work from '../Components/Work'
+import AboutMe from '../Components/AboutMe'
+import { Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
@@ -13,7 +15,10 @@ const Home = () => {
       <div className='gradient__bg'>
         <Navbar/>
         <Header/>
+        <Box display={{base : "none",sm : "block"}}>
         <About/>
+        </Box>
+        <AboutMe/>
         <Tech/>
         <Work/>
         {/* <Contact/> */}

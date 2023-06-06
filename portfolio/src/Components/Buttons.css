@@ -2,7 +2,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-right: 20px;
     width: 60%;
     padding: 0;
     color: white;
@@ -29,10 +30,11 @@
 
 .button_container .btn.pri{
     border: 2px solid white;
+    margin-right: 20px;
 }
 .button_container .btn.pri:hover{
     border: none;
-    background-color: rgb(49, 179, 255);
+    background-color: #FF4820;
 }
 
 .button_container .btn.pri::before{
@@ -71,7 +73,7 @@
 }
 
 .button_container .btn.sec{
-    background-color: rgb(49, 179, 255);
+    background-color: #FF4820;
 }
 
 .button_container .btn.sec:hover{

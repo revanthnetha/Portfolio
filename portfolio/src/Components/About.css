@@ -1,6 +1,6 @@
 .home_container{
     position: relative;
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 50px 40px;
     margin-top: 7px;
     display: flex;

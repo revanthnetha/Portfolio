@@ -22,12 +22,21 @@ const Header = () => {
     >
         <Box alignSelf={"center"}>
         
-        <Center 
-         fontSize={{ base: "18px", sm: "28px", md: "42px", lg: "54px" }}
-         fontWeight={{ base: " 650", md: " 650", lg: "750" }}
-         lineHeight={{ base: "30px",sm : "40px", md: "80px" }}
-         letterSpacing="-0.32px"
-        className="gradient__text" >Hi I'm Bandi Revanth </Center>
+        <Center
+          color="white"
+          fontSize={{ base: "18px", sm: "22px", md: "34px", lg: "54px" }}
+          fontWeight={{ base: "450", md: " 500", lg: "650" }}
+          lineHeight={{ base: "40px", md: "80px" }}
+          letterSpacing="-0.32px"
+        >
+          Hi I'm
+          <Center
+            className="gradient__text"
+            ml={"12px"}
+          >
+            Bandi Revanth
+          </Center>
+        </Center>{" "}
         
         
         <Center 
