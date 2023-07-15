@@ -1,139 +1,182 @@
-import React from "react";
 import {
-  FaEnvelopeOpen,
-  FaPhoneSquareAlt,
-  FaGithub,
-  FaYoutube,
-  FaInstagram,
-  FaLinkedin
-} from "react-icons/fa";
-import { Box, Center, Link, Text,Stack } from "@chakra-ui/react";
-import { FiSend } from "react-icons/fi";
-import "./Contact.css"
+  Container,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  IconButton,
+  Button,
+  VStack,
+  HStack,
+  Wrap,
+  WrapItem,
+  FormControl,
+  FormLabel,
+  Input,
+  Center,
+  InputGroup,
+  InputLeftElement,
+  Textarea,
+} from '@chakra-ui/react';
+import {
+  MdPhone,
+  MdEmail,
+  MdLocationOn,
+  MdFacebook,
+  MdOutlineEmail,
+} from 'react-icons/md';
+import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 
-const Contact = () => {
+export default function contact() {
   return (
-    <Box id="contact" px={{base : "100px",md : "180px"}} color={"white"}>
-      <Center
-        fontSize={{ base: "25px", sm: "30px", md: "42px", lg: "54px" }}
-        fontWeight={{ base: " 650", md: " 650", lg: "750" }}
-        lineHeight={{ base: "40px", md: "100px" }}
-        letterSpacing="-0.32px"
-        mb={"40px"}
-      >
-        <Box mr={"12px"}>Get In</Box>{" "}
-        <Text className="gradient__text">Touch!</Text>
-      </Center>
-
-      <Box display={"flex"} flexDirection={{base : "column",md : "row"}}>
+    <Container  maxW="full" mt={0} centerContent overflow="hidden">
+       <Center
+          color="white"
+          fontSize={{ base: "22px", sm: "28px", md: "36px", lg: "44px" }}
+          fontWeight={{ base: "450", md: " 500", lg: "650" }}
+          lineHeight={{ base: "40px", md: "100px" }}
+          letterSpacing="-0.32px"
+        >
+          Contact{" "}
+          <Center
+            className="gradient__text"
+            ml={"12px"}
+          >
+            Me
+          </Center>
+        </Center>
+      <Flex>
         <Box
-        maxWidth={{base :"300px",md : "550px"}}
-        mr={"20px"}
-        >
-        <Text
-         fontSize={{ base: "22px", sm: "28px", md: "36px", lg: "40px" }}
-         fontWeight={{ base: "450", md: " 500", lg: "650" }}
-         lineHeight={{ base: "40px", md: "100px" }}
-         letterSpacing="-0.32px"
-        >Ping Me!</Text>
-        <Text
-         fontSize={{ base: "16px", sm: "18px", md: "18px", lg: "20px" }}
-         fontWeight={{ base: " 400", md: "450", lg: "450" }}
-         lineHeight={{ base: "20px", md: "40px" }}
-         letterSpacing="-0.32px"
-        >
-          Feel Free to get in touch with me.I am always open to discussing new
-          Projects, creative ideas or opportunities to be part of your visions.
-        </Text>
-
-        <Box display={"flex"} flexDirection={"row"} my={"10px"}>
-            <Center mr={"14px"}>
-                <FaEnvelopeOpen color="white" width={"22px"} height={"22px"}/>
-            </Center>
-            <Box>
-                <Text>Mail me </Text>
-                <Link href="#" _hover={{cursor : "pointer"}}>bandirevanth143@gmail.com</Link></Box>
+          bg="#02054B"
+          color="white"
+          borderRadius="lg"
+          m={{ sm: 4, md: 16, lg: 10 }}
+          p={{ sm: 5, md: 5, lg: 16 }}>
+          <Box p={4}>
+            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+              <WrapItem>
+                <Box>
+                  <Heading>Lets Work together</Heading>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  Lets Work together
+                  </Text>
+                  <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
+                    <VStack pl={0} spacing={3} alignItems="flex-start">
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="200px"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: '2px solid #1C6FEB' }}
+                        leftIcon={<MdPhone color="#1970F1" size="20px" />}>
+                        +91-988888888
+                      </Button>
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="200px"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: '2px solid #1C6FEB' }}
+                        leftIcon={<MdEmail color="#1970F1" size="20px" />}>
+                        hello@abc.com
+                      </Button>
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="200px"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: '2px solid #1C6FEB' }}
+                        leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
+                        Karnavati, India
+                      </Button>
+                    </VStack>
+                  </Box>
+                  <HStack
+                    mt={{ lg: 10, md: 10 }}
+                    spacing={5}
+                    px={5}
+                    alignItems="flex-start">
+                    <IconButton
+                      aria-label="facebook"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<MdFacebook size="28px" />}
+                    />
+                    <IconButton
+                      aria-label="github"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<BsGithub size="28px" />}
+                    />
+                    <IconButton
+                      aria-label="discord"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<BsDiscord size="28px" />}
+                    />
+                  </HStack>
+                </Box>
+              </WrapItem>
+              <WrapItem>
+                <Box bg="white" borderRadius="lg">
+                  <Box m={8} color="#0B0E3F">
+                    <VStack spacing={5}>
+                      <FormControl id="name">
+                        <FormLabel>Your Name</FormLabel>
+                        <InputGroup borderColor="#E0E1E7">
+                          <InputLeftElement
+                            pointerEvents="none"
+                            children={<BsPerson color="gray.800" />}
+                          />
+                          <Input type="text" size="md" />
+                        </InputGroup>
+                      </FormControl>
+                      <FormControl id="name">
+                        <FormLabel>Mail</FormLabel>
+                        <InputGroup borderColor="#E0E1E7">
+                          <InputLeftElement
+                            pointerEvents="none"
+                            children={<MdOutlineEmail color="gray.800" />}
+                          />
+                          <Input type="text" size="md" />
+                        </InputGroup>
+                      </FormControl>
+                      <FormControl id="name">
+                        <FormLabel>Message</FormLabel>
+                        <Textarea
+                          borderColor="gray.300"
+                          _hover={{
+                            borderRadius: 'gray.300',
+                          }}
+                          placeholder="message"
+                        />
+                      </FormControl>
+                      <FormControl id="name" float="right">
+                        <Button
+                          variant="solid"
+                          bg="#0D74FF"
+                          color="white"
+                          _hover={{}}>
+                          Send Message
+                        </Button>
+                      </FormControl>
+                    </VStack>
+                  </Box>
+                </Box>
+              </WrapItem>
+            </Wrap>
+          </Box>
         </Box>
-        <Box display={"flex"} flexDirection={"row"} my={"10px"}>
-            <Center mr={"14px"}>
-                <FaPhoneSquareAlt color="white" width={"22px"} height={"22px"}/>
-            </Center>
-            <Box>
-                <Text>Call me </Text>
-                <Link href="#" _hover={{cursor : "pointer"}}>8919785216</Link></Box>
-        </Box>
-
-        
-        <Stack direction={"row"} spacing={6}>
-							<Box label={"Linkedin"} href={"#"} 
-                            _hover={{
-                                cursor : 'pointer'
-                            }}
-
-                            >
-								<FaLinkedin />
-							</Box>
-							<Box label={"YouTube"} href={"https://www.youtube.com/"}
-                             _hover={{
-                                cursor : 'pointer'
-                            }}
-                            >
-								<FaYoutube />
-							</Box>
-							<Box label={"Instagram"} href={"#"}
-                             _hover={{
-                                cursor : 'pointer'
-                            }}
-                            >
-								<FaInstagram />
-							</Box>
-							<Box label={"Github"} href={"#"}
-                             _hover={{
-                                cursor : 'pointer'
-                            }}
-                            >
-								<FaGithub />
-							</Box>
-						</Stack>
-        </Box>
-        <Box >
-          <form className="contact_form">
-             <div className="form_input_group">
-              <div className="form_input_div">
-                <input type="text" 
-                placeholder="Your Name"
-                className="form__control"
-                />
-              </div>
-              <div className="form_input_div">
-                <input type="email" 
-                placeholder="Your Email"
-                className="form__control"
-                />
-              </div>
-              <div className="form_input_div">
-                <input type="text" 
-                placeholder="Your Subject"
-                className="form__control"
-                />
-              </div>
-             </div>
-             <div className="form_input_div">
-               <textarea placeholder="Your Message" className="form_control textarea"></textarea>
-              </div>
-
-              <button className="button">
-                Send Message
-                <span className="button_icon contact_button_icon">
-                  <FiSend/>
-                </span>
-              </button>
-          </form>
-        </Box>
-      </Box>
-
-    </Box>
+      </Flex>
+    </Container>
   );
-};
-
-export default Contact;
+}
