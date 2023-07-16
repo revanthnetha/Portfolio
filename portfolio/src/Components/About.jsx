@@ -1,10 +1,10 @@
 import "./About.css";
 import React from "react";
 
-// const toggle = document.querySelector(".main_img");
-// toggle.addEventListener("click", () => {
-//   toggle.classList.toggle("active");
-// });
+const toggle = document.querySelector(".main_img");
+toggle.addEventListener("click", () => {
+  toggle.classList.toggle("active");
+});
 function About() {
   return (
     

@@ -7,7 +7,7 @@ import {
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import { FaInstagram,  FaLinkedin, FaGithub } from 'react-icons/fa';
   import { ReactNode } from 'react';
   
   const Logo = () => {
@@ -57,15 +57,15 @@ import {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Logo />
-          <Text color={"white"}>© 2022 Chakra Templates. All rights reserved</Text>
-          <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
+          <Text color={"white"}>© 2022 Revanth Portfolio. All rights reserved</Text>
+          <Stack direction={'row'} spacing={6} color={"white"}>
+            <SocialButton label={'Github'} href={"https://github.com/revanthnetha"}>
+              <FaGithub /> 
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
+            <SocialButton label={'Linkedin'} href={"https://www.linkedin.com/in/bandi-revanth-9819701ba/"}>
+              <FaLinkedin />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={"https://instagram.com/_netha_revanth_007?igshid=ZDc4ODBmNjlmNQ=="}>
               <FaInstagram />
             </SocialButton>
           </Stack>

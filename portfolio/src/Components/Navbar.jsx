@@ -20,10 +20,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="port__navbar-sign">
-        
+        <a href="#contact">
         <button type="button"  _hover={{
           cursor: "pointer",
+          
         }}>Contact Me</button>
+        </a>
       </div>
       <div className="port__navbar-menu">
         {toggleMenu
@@ -37,7 +39,8 @@ const Navbar = () => {
             <p><a href="#work">Work</a></p>
           </div>
           <div className="port__navbar-menu_container-links-sign">
-            <Button type="button" >Contact</Button>
+            <a href="#contact"><Button type="button" >Contact</Button></a>
+            
           </div>
         </div>
         )}
