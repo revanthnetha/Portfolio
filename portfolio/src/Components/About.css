@@ -1,0 +1,173 @@
+.home_container{
+    position: relative;
+    min-height: 50vh;
+    padding: 20px 40px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_container .logo{
+    position: inherit;
+    margin-top: -50px;
+    height: 520px;
+    width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.home_container .logo .main_img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+
+}
+
+.home_container .logo .main_img.active{
+    animation: spin 8s linear 1s infinite;
+}
+
+@keyframes spin{
+    to{
+      transform: rotate(360deg);  
+    }
+}
+
+.gradient__text{  
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home_container .logo .circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+
+.home_container .logo .main_img.active .circle{
+    opacity: 1;
+}
+
+.home_container .logo .main_img.active .circle:nth-child(1){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947721/Portfolio/HTML5_logo_and_wordmark.svg_mvt2sx.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-210%);
+}
+.home_container .logo .main_img.active .circle:nth-child(2){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947691/Portfolio/logo-2582747_1280_kgqynp.webp");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%, -150%);
+}
+.home_container .logo .main_img.active .circle:nth-child(3){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947857/Portfolio/JavaScript-logo_cxnzgm.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(210%);
+}
+.home_container .logo .main_img.active .circle:nth-child(4){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947660/Portfolio/png-transparent-react-computer-icons-redux-javascript-others-logo-symmetry-nodejs-thumbnail_s8zoxw.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%, 150%);
+}
+.home_container .logo .main_img.active .circle:nth-child(5){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947744/Portfolio/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue_mdjk0s.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(210%);
+}
+.home_container .logo .main_img.active .circle:nth-child(6){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947768/Portfolio/Java_programming_language_logo.svg_nbs591.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+.home_container .logo .main_img.active .circle:nth-child(7){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685947830/Portfolio/png-transparent-photoshop-2020-logo-icon_qc1bt7.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateX(-210%);
+}
+.home_container .logo .main_img.active .circle:nth-child(8){
+    background: url("https://res.cloudinary.com/dvcksw7qc/image/upload/v1685948216/Portfolio/Python-logo-notext.svg_bbp3qs.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-150%,-150%);
+}
+
+.home_container img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid rebeccapurple;
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards;
+}
+
+@keyframes fade-in{
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.home_container h2{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin-top: 50px;
+}
+
+.home_container h2 span {
+    font-size: 25px;
+    opacity: 0.8;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-pri);
+    font-family:sans-serif;
+}
+
+.home_container h2 p{
+    font-size: 20px;
+    opacity: 1;
+    font-weight: 100;
+    margin-top: 1px;
+    font-family: sans-serif;
+    color: white;
+}
+
+
